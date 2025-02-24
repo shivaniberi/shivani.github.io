@@ -3,27 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shivani Beri">
+    <meta name="description" content="Software Engineer Portfolio">
     <title>Shivani Beri - Software Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .content h2 {
+            color: #4CAF50;
+        }
+
+        .project, .work-experience, .education, .skills {
+            background-color: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .project h3, .work-experience h3, .education h3, .skills h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .contact {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            width: 60%;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+        }
+
+        .skills ul, .work-experience ul, .education ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skills li, .work-experience li, .education li {
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Shivani Beri</h1>
         <h2>Software Engineer</h2>
     </header>
-    <section>
-        <h3>About Me</h3>
-        <p>I am a Software Engineer with years of experience...</p>
-    </section>
-    <section>
-        <h3>Key Projects</h3>
-        <ul>
-            <li><strong>Finance Data Analytics using Snowflake & Airflow</strong> - Built and optimized ETL pipelines...</li>
-            <li><strong>Power BI Dashboard: Visualizing Natural Calamities</strong> - Designed an interactive Power BI dashboard...</li>
-        </ul>
-    </section>
+
+    <div class="container">
+        <section class="content">
+            <p>I am a Software Engineer with years of experience building scalable applications, writing clean code, and adapting quickly to modern technologies. I am passionate about solving complex problems and delivering high-quality solutions. I have a strong foundation in various development methodologies, including Agile, and have worked on projects involving distributed systems, microservices, and cloud computing.</p>
+
+            <h2>Key Projects</h2>
+
+            <div class="project">
+                <h3>Finance Data Analytics using Snowflake & Airflow</h3>
+                <p>Built and optimized ETL pipelines using Airflow and Snowflake, improving efficiency by 55%. Leveraged Python for stock prediction accuracy using machine learning models by 55% and applied ML techniques to predict stock performance, increasing prediction accuracy by 30%.</p>
+            </div>
+
+            <div class="project">
+                <h3>Power BI Dashboard: Visualizing Natural Calamities</h3>
+                <p>Designed an interactive Power BI dashboard to visualize the trends and impact of natural calamities (e.g., earthquakes, floods, hurricanes) on global populations, enabling data-driven decision-making for disaster response and resource allocation.</p>
+            </div>
+
+            <h2>Skills</h2>
+            <div class="skills">
+                <h3>Technical Skills:</h3>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Python, C#, JavaScript</li>
+                    <li><strong>Data & Databases:</strong> SQL, MySQL, MongoDB, Snowflake</li>
+                    <li><strong>Data Engineering & ETL:</strong> Airflow, Spark</li>
+                    <li><strong>Development Tools:</strong> Git, AWS, Docker, Azure, Jenkins</li>
+                    <li><strong>Development Methodologies:</strong> Agile Development, Microservices, REST APIs</li>
+                    <li><strong>Data Science:</strong> Machine Learning, Data Visualization, Statistics</li>
+                </ul>
+            </div>
+
+            <h2>Work Experience</h2>
+            <div class="work-experience">
+                <h3>Community Brands | Software Engineer (Oct 2022 - May 2024)</h3>
+                <ul>
+                    <li>Led the development of educational modules using C#, .NET, and Web APIs, enhancing user experience.</li>
+                    <li>Engineered an AI-powered chat application leveraging AWS S3 and Cognitive Search for efficient document retrieval.</li>
+                    <li>Collaborated with cross-functional teams to design and implement solutions aligned with business goals.</li>
+                </ul>
+            </div>
+
+            <div class="work-experience">
+                <h3>NextGen Healthcare | Software Developer II (Jun 2021 - Oct 2022)</h3>
+                <ul>
+                    <li>Developed scalable microservices for ingesting and processing log data through distributed systems.</li>
+                    <li>Optimized Jenkins pipelines to improve build efficiency by 30% and reduce test times by nearly 40%.</li>
+                    <li>Utilized AWS SQS, SNS, API Gateway, and Lambda to create well-architected solutions.</li>
+                </ul>
+            </div>
+
+            <div class="work-experience">
+                <h3>Fiserv | Associate Software Developer (Feb 2018 - May 2021)</h3>
+                <ul>
+                    <li>Developed a bill generation utility using C#, automating unit testing and speeding up the process by 25%.</li>
+                    <li>Developed PowerShell scripts to automate daily processes, reducing human intervention by 20%.</li>
+                    <li>Built scalable web applications using ASP.NET MVC, enhancing user experience and functionality.</li>
+                </ul>
+            </div>
+
+            <h2>Education</h2>
+            <div class="education">
+                <h3>Master of Science, Data Analytics - San Jose State University (Aug 2024 - Present)</h3>
+                <ul>
+                    <li>Coursework: Machine Learning, Data Visualization, Statistical Analysis, ETL Processes</li>
+                    <li>Projects: Power BI Dashboard for Natural Calamities, Finance Data Analytics using Snowflake & Airflow</li>
+                </ul>
+            </div>
+
+            <div class="education">
+                <h3>Bachelor of Engineering, Computer Science - Pune University (May 2013 - May 2017)</h3>
+                <ul>
+                    <li>Coursework: Data Structures, Algorithms, Database Management, Web Development, Operating Systems</li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <p>Contact me at <a href="mailto:berishivani95@gmail.com" style="color: white;">berishivani95@gmail.com</a></p>
+            </div>
+        </section>
+    </div>
+
     <footer>
-        <p>Contact me at <a href="mailto:your-email@example.com">berishivani95@gmail.com</a></p>
+        <p>&copy; 2025 Shivani Beri. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
