@@ -16,11 +16,12 @@ body {
 a {
   color: #2563eb;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 a:hover {
   color: #1e40af;
+  text-decoration: underline;
 }
 
 /* ---------- Header ---------- */
@@ -40,6 +41,20 @@ header h1 {
 header p {
   margin-top: 0.5rem;
   font-size: 1.1rem;
+}
+
+/* White links for header section only */
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 0.4rem;
+  transition: opacity 0.3s ease, text-decoration 0.3s ease;
+}
+
+header a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 /* ---------- Sections ---------- */
@@ -135,6 +150,7 @@ footer a {
 
 footer a:hover {
   color: #fff;
+  text-decoration: underline;
 }
 
 /* ---------- Responsive Design ---------- */
